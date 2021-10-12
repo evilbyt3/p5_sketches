@@ -1,0 +1,9 @@
+{
+  "name": "p5_proj",
+  "projects": [
+    "random_walker",
+    "perlin_noise",
+    "walker_levy_flight",
+    "acceleration_mouse"
+  ]
+}
