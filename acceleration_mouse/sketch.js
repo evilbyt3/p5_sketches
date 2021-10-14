@@ -14,10 +14,10 @@ function draw() {
 	background(0);
 	let acc = createVector(mouseX, mouseY);
 	acc.sub(pos);
-	acc.setMag(1);
+	acc.setMag(2);
 
 	vel.add(acc);
-	vel.limit(5);
+	vel.limit(10);
 
 	pos.add(vel);
 	ellipse(pos.x, pos.y, 24);

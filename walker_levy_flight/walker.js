@@ -13,7 +13,7 @@ class Walker {
 	update() {
 		let r = random(1);
 		if (r < this.prob) {
-			this.vel.mult(random(25, 75));
+			this.vel.mult(random(25, 100));
 		} else {
 			this.vel.setMag(2);
 		}
@@ -29,7 +29,18 @@ class Walker {
 	}
 
 	edges() {
-		// IDK man
+		if (this.pos.y >= height) {
+			this.pos.y  = height;
+			this.vel.y *= -1;
+		}
+
+		if (this.pos.x >= width) {
+			this.pos.x  = width;
+			this.vel.x *= -1;
+		} else if (this.pos.x <= 0) {
+			this.pos.x  = 0;
+			this.vel.x *= -1;
+		}
 	}
 
 

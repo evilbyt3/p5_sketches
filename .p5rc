@@ -4,6 +4,9 @@
     "random_walker",
     "perlin_noise",
     "walker_levy_flight",
-    "acceleration_mouse"
+    "acceleration_mouse",
+    "gravity_n_wind",
+    "attractor",
+    "many_to_many_gravity"
   ]
 }

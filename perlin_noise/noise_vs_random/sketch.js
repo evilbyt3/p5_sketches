@@ -17,10 +17,10 @@ function draw() {
   for(let x = 0; x < width; x++) {
 
     // Uncomment to see random version
-    //y = random(height); 
+    //y = random(height);
     
     // Just perlin noise
-    //y = map(noise(xoff), 0, 1, 0, height);
+    y = map(noise(xoff), 0, 1, 0, height);
 
     // Sinusoid sprinkled with perlin noise
     // let pn = map(noise(xoff), 0, 1, -50, 50);
@@ -28,9 +28,9 @@ function draw() {
     // let y  = pn + sn
 
     // Vice-versa
-    let pn = map(noise(xoff), 0, 1, 0, height);
-    let sn = map(sin(xoff), -1, 1, -50, 50);
-    let y  = pn + sn
+    // let pn = map(noise(xoff), 0, 1, 0, height);
+    // let sn = map(sin(xoff), -1, 1, -50, 50);
+    // let y  = pn + sn
 
     vertex(x, y);
     xoff += stepRate;
