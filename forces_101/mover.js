@@ -15,7 +15,7 @@ class Mover {
 		this.acc.set(0, 0);
 	}
 
-	friction() {
+	applyFriction() {
 
 		// Apply only if it touches the ground
 		let diff = height - (this.pos.y + this.r);
@@ -53,6 +53,7 @@ class Mover {
 	show() {
 		stroke(255);
 		ellipse(this.pos.x, this.pos.y, this.r * 2);
+		drawArrow(mover.pos, mover.vel, 'red');
 	}
 
 	edges() {
